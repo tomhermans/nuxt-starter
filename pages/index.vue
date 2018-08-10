@@ -3,10 +3,10 @@
     <div>
       <app-logo/>
       <h1 class="title">
-        nuxt-starter
+        nuxt-starter TH
       </h1>
       <h2 class="subtitle">
-        Nuxt.js project
+        Nuxt.js project starter
       </h2>
       <div class="links">
         <a
