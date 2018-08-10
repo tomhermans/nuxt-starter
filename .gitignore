@@ -3,6 +3,8 @@ node_modules
 
 # logs
 npm-debug.log
+nuxt-starter.sublime-project
+nuxt-starter.sublime-workspace
 
 # Nuxt build
 .nuxt
