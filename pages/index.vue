@@ -1,65 +1,14 @@
 <template>
-  <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        nuxt-starter TH
-      </h1>
-      <h2 class="subtitle">
-        Nuxt.js project starter
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
-    </div>
-  </section>
+  <div>
+    <main class="grid-main">
+      <h1>Hi, I'm a Vue page, the index one</h1>
+      <h2>No idea where this is going next</h2>
+      <p>Let's add some lorem ipsum</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor ex felis, a laoreet elit ullamcorper eget. Ut quis euismod urna, quis eleifend nisi. Praesent libero justo, bibendum blandit bibendum vel, imperdiet sed dui. Ut augue est, placerat sed purus in, viverra auctor enim. Aenean eleifend tortor ac est pulvinar aliquam. Maecenas lacinia eros sed egestas tristique. Vivamus pharetra ex maximus velit pellentesque pharetra. Nulla augue magna, malesuada vitae dolor nec, maximus varius diam. Sed faucibus dui ipsum, non fermentum dolor hendrerit tincidunt. Praesent eu dolor et dolor volutpat aliquam. Nulla suscipit faucibus purus at sollicitudin. Proin elementum, augue sit amet fermentum convallis, elit justo pretium magna.</p>
+    </main>
+    <aside class="grid-aside">
+      aside
+    </aside>
+
+  </div>
 </template>
-
-<script>
-import AppLogo from '~/components/AppLogo.vue'
-
-export default {
-  components: {
-    AppLogo
-  }
-}
-</script>
-
-<style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>
-

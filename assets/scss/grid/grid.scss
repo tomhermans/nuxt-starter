@@ -1,0 +1,92 @@
+// grid.scss
+
+:root {
+  --main-bg-color: #bababa;
+  --padding: .25rem;
+  --black: #222;
+  --white: #efefef;
+  --textcolor: var(--black);
+  --breakpoint: 768px;
+}
+body {
+  background: var(--main-bg-color);
+  color: var(--textcolor);
+  font-family: sans-serif;
+  padding: 1px calc(var(--padding) * 4);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: 120px 50px auto auto;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header"
+                       "nav"
+                       "main"
+                       "aside";
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: minmax(60%, auto) 1fr 1fr;
+    grid-template-areas:  "header header header"
+                          "nav nav nav"
+                          "main aside footer"
+                          "main aside footer";
+  }
+}
+
+
+.grid {
+  // make grid visible
+  &-header, &-nav, &-main, &-aside, &-footer {
+    border: 1px dashed rgba(cyan, .75);
+    padding: calc(var(--padding) * 4);
+  }
+  &-header {
+    background: red; //var(--white);
+    // grid-column-start: 1;
+    // grid-column-end: 4;
+    grid-area: header;
+  }
+  &-nav {
+    grid-area: nav;
+    background: rgba(blue, .5);
+  }
+  &-main {
+    grid-area: main;
+    background: #c9c9c9;
+    // grid-column-start: 1;
+    // grid-column-end: 4;
+
+    // @media screen and (min-width: 768px) {
+    //   grid-column-start: 1;
+    //   grid-column-end: 2;
+    //   grid-row-start: 2;
+    //   grid-row-end: 4;
+    // }
+  }
+  &-aside {
+    grid-area: aside;
+    background: rgba(purple, .5);
+    // grid-column-start: 1;
+    // grid-column-end: 4;
+    // @media screen and (min-width: 768px) {
+    //   grid-column-start: 2;
+    //   grid-column-end: 3;
+    //   grid-row-start: 2;
+    //   grid-row-end: 4;
+    // }
+  }
+  &-footer {
+    grid-area: footer;
+    background: black; //var(--black);
+    color: white; //var(--textcolor);
+    // grid-column-start: 1;
+    // grid-column-end: 4;
+    // @media screen and (min-width: 768px) {
+    //   grid-column-start: 3;
+    //   grid-column-end: 4;
+    //   grid-row-start: 2;
+    //   grid-row-end: 4;
+    // }
+  }
+
+}

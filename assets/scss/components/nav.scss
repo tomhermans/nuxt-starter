@@ -1,0 +1,16 @@
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  &__item a {
+    padding: $global-padding;
+    background: $anchor-color;
+    margin-right: $global-margin / 4;
+  }
+}
