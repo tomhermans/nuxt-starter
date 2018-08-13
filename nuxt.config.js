@@ -11,7 +11,8 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
+
   },
   css: [
     { lang: 'scss', src: '@/assets/scss/app.scss' },
@@ -19,8 +20,7 @@ module.exports = {
   /*
   ** Customize the progress bar color
   */
-  loading: { color: '#3B8070' },
-
+  loading: false, // { color: '#3B8070' }, // disabling the loading progress bar on top of the screen
 
   /*
   ** Build configuration

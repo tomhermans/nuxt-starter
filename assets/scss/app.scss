@@ -3,8 +3,12 @@
 @import 'global/reset';
 @import 'global/fonts';
 
+@import 'global/animation';
 @import 'global/typography';
 @import 'grid/grid';
+
+// components
+@import 'components/header';
 @import 'components/nav';
 
 body {
