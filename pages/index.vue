@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page">
     <main class="grid-main">
       <h1>Hi, I'm a Vue page, the index one</h1>
       <h2>No idea where this is going next</h2>

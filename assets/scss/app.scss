@@ -1,5 +1,9 @@
 @import 'settings';
 
+@import 'global/reset';
+@import 'global/fonts';
+
+@import 'global/typography';
 @import 'grid/grid';
 @import 'components/nav';
 

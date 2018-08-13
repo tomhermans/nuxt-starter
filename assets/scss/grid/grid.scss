@@ -12,7 +12,7 @@ body {
   background: var(--main-bg-color);
   color: var(--textcolor);
   font-family: sans-serif;
-  padding: 1px calc(var(--padding) * 4);
+  padding: 1px calc(var(--padding) * 0);
 }
 
 .grid-container {
@@ -37,22 +37,22 @@ body {
 .grid {
   // make grid visible
   &-header, &-nav, &-main, &-aside, &-footer {
-    border: 1px dashed rgba(cyan, .75);
+    // border: 1px dashed rgba(cyan, .75);
     padding: calc(var(--padding) * 4);
   }
   &-header {
-    background: red; //var(--white);
+    background: var(--white);
     // grid-column-start: 1;
     // grid-column-end: 4;
     grid-area: header;
   }
   &-nav {
     grid-area: nav;
-    background: rgba(blue, .5);
+    background: $color3;
   }
   &-main {
     grid-area: main;
-    background: #c9c9c9;
+    background: darken($white, 8);
     // grid-column-start: 1;
     // grid-column-end: 4;
 
@@ -65,7 +65,7 @@ body {
   }
   &-aside {
     grid-area: aside;
-    background: rgba(purple, .5);
+    background: $color1;
     // grid-column-start: 1;
     // grid-column-end: 4;
     // @media screen and (min-width: 768px) {
@@ -77,7 +77,7 @@ body {
   }
   &-footer {
     grid-area: footer;
-    background: black; //var(--black);
+    background: $color2; //var(--black);
     color: white; //var(--textcolor);
     // grid-column-start: 1;
     // grid-column-end: 4;

@@ -9,8 +9,10 @@
   flex-direction: row;
 
   &__item a {
-    padding: $global-padding;
-    background: $anchor-color;
+    border-radius: $global-radius;
+    padding: $global-padding / 1.5;
+    background: darken($color3, 10);
     margin-right: $global-margin / 4;
+    text-decoration: none;
   }
 }
