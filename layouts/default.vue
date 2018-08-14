@@ -1,18 +1,22 @@
 <template>
   <div class="grid">
-    <HeaderComponent></HeaderComponent>
+    <HeaderComponent :siteData="site_data" />
     <navbar></navbar>
+
     <nuxt/>
+
     <FooterComponent></FooterComponent>
   </div>
 </template>
 
 <script>
-  import HeaderComponent from '../components/HeaderComponent'
-  import Navbar from '../components/Navbar'
-  import FooterComponent from '../components/FooterComponent'
+  import { mapState } from 'vuex'
+  import HeaderComponent from '~/components/HeaderComponent'
+  import Navbar from '~/components/Navbar'
+  import FooterComponent from '~/components/FooterComponent'
 
   export default {
+    computed: mapState(['site_data']),
     components: {
       HeaderComponent,
       Navbar,
