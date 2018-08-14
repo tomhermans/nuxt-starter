@@ -5,7 +5,7 @@
 
     <nuxt/>
 
-    <FooterComponent></FooterComponent>
+    <FooterComponent :siteData="site_data" />
   </div>
 </template>
 

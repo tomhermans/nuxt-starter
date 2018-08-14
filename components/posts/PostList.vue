@@ -27,7 +27,7 @@ export default {
 .post-list-item {
   list-style: none;
   margin: 10px 0;
-  border: 1px solid black;
+  border: 1px solid #a9a9a9;
   padding: 0 1rem;
 }
 </style>
